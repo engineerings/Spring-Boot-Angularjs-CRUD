@@ -1,0 +1,31 @@
+<div class="container pad-top">
+  <table class="table carsTable">
+      <tr>
+          <td><h3>Details for {{car.name}}</h3></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Name</td>
+          <td>{{car.name}}</td>
+      </tr>
+      <tr>
+          <td>Description</td>
+          <td>{{car.description}}</td>
+      </tr>
+      <tr>
+          <td>Speed</td>
+          <td>{{car.speed}}</td>
+      </tr>
+      <tr>
+          <td>Price</td>
+          <td>{{car.price}}</td>
+      </tr>
+      <tr>
+          <td>Year</td>
+          <td>{{car.year}}</td>
+      </tr>
+  </table>
+  <div>
+      <a class="btn btn-primary" ui-sref="editCar({id:car.id})">Edit</a>
+  </div>
+</div>

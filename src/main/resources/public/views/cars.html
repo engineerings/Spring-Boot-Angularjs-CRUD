@@ -1,0 +1,23 @@
+<div class="container pad-top">
+  <a ui-sref="newCar" class="btn-primary btn-lg">Add New Car</a>
+  <table class="table carsTable">
+      <tr>
+          <td>Name</td>
+          <td>Description</td>
+          <td>Speed</td>
+          <td>Price</td>
+          <td>Year</td>
+      </tr>
+      <tr ng-repeat="car in cars">
+          <td>{{car.name}}</td>
+          <td>{{car.description}}</td>
+          <td>{{car.speed}}</td>
+          <td>{{car.price}}</td>
+          <td>{{car.year}}</td>
+          <td>
+              <a class="btn btn-primary" ui-sref="viewCar({id:car.id})">View</a>
+              <a class="btn btn-danger"  ng-click="deleteCar(car)">Delete</a>
+          </td>
+      </tr>
+  </table>
+</div>
